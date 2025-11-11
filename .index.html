@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gráficos Vega-Lite</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  </head>
+  <body style="font-family: sans-serif; margin: 40px;">
+    <h1>Gráficos Vega-Lite – Yasmin Silva</h1>
+
+    <h2>Gráfico de Barras</h2>
+    <div id="grafico_barras"></div>
+
+    <h2>Gráfico de Dispersão</h2>
+    <div id="grafico_dispersao"></div>
+
+    <script type="text/javascript">
+      // Gráfico 1: Barras
+      vegaEmbed(
+        '#grafico_barras',
+        'https://api.observablehq.com/d/387d9f690eae2c0e.js?v=3&cell=grafico_barras'
+      );
+
+      // Gráfico 2: Dispersão
+      vegaEmbed(
+        '#grafico_dispersao',
+        'https://api.observablehq.com/d/387d9f690eae2c0e.js?v=3&cell=grafico_dispersao'
+      );
+    </script>
+  </body>
+</html>
